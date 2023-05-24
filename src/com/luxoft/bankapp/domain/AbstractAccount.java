@@ -110,11 +110,15 @@ public abstract class AbstractAccount implements Account, Serializable, Cloneabl
         return null;
 	}
 
-	@Override protected Object clone() {
+	@Override public Object clone() {
 		try {
 			return super.clone();
 		} catch (CloneNotSupportedException e) {
 			throw new RuntimeException(e);
 		}
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
 	}
 }

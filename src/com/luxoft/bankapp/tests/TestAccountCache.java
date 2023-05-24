@@ -27,5 +27,6 @@ public class TestAccountCache {
     assertTrue(checkingAccount instanceof CheckingAccount);
     assertEquals(checkingAccount.getBalance(), 0.0, 0);
     assertEquals(checkingAccount.getId(), 0);
+    assertEquals(((CheckingAccount) checkingAccount).getOverdraft(), 0.0, 0);
   }
 }

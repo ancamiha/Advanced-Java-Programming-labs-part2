@@ -25,7 +25,11 @@ public class SavingAccount extends AbstractAccount {
 	public Currency getCurrency() {
 		return currency;
 	}
-	
+
+	public void setCurrency(Currency currency) {
+		this.currency = currency;
+	}
+
 	@Override
 	public String toString() {
 		Formatter fmt = new Formatter(Locale.US);
